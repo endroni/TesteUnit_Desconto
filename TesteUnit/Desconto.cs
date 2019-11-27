@@ -25,6 +25,11 @@ namespace TesteUnit
             else if (ValorVenda >= 5000 && ValorVenda < 20000)
             {
                 // 50% Desconto 
+                valorDesconto = ValorVenda - (ValorVenda * 0.5);
+            }
+            else
+            {
+                //Sem desconto 
                 valorDesconto = ValorVenda - 0.0;
             }
             return valorDesconto;
